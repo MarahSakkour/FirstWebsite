@@ -13,7 +13,7 @@ a {
   width: 100%;
   height: 65px;
   position: fixed;
-  background-color: palevioletred;
+  background-color: rgb(200, 21, 141);
   top: 0px;
   left: 0px;
   padding: 0px;
@@ -59,7 +59,7 @@ li:hover::after {
 
 .hero {
   width: 100%;
-  background-image: url(../images/image.png);
+  background-image: url(../images//hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 65px);
@@ -70,18 +70,22 @@ li:hover::after {
 .hero-text {
   width: 40%;
   height: auto;
-  /* background-color: blanchedalmond; */
+  background-color: rgba(232, 30, 164, 0.396);
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 22px;
+  border-radius: 60px;
 }
 
 .hero-text h1 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-text p {
@@ -133,17 +137,30 @@ li:hover::after {
   border: 2px solid black;
   padding: 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .about-box::after {
   content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: rgba(221, 125, 116, 0.436);
   top: 0;
   left: 0;
   width: 0px;
   height: 0px;
   transition: 0.5s;
+}
+
+.about-box:hover h2{
+color: black;
+}
+
+.about-box:hover p{
+  color: rgb(205, 47, 47);
+}
+
+.about-box:hover i{
+  color: rgb(205, 47, 47);;
 }
 
 .about-box:hover a {
@@ -180,7 +197,7 @@ li:hover::after {
 
 .about-box a {
   background-color: black;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   left: 50%;
   bottom: 20px;
@@ -258,8 +275,8 @@ li:hover::after {
 }
 
 .glary-overlay p {
-  font-size: 20px;
-  color: gray;
+  font-size: 30px;
+  color: black;
 }
 
 .glary-overlay i {
@@ -318,7 +335,7 @@ li:hover::after {
   text-align: left;
   padding-top: 30px;
   padding-left: 50px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .services-box2 {
@@ -328,7 +345,7 @@ li:hover::after {
 
 .services-box h2 {
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 200;
   color: red;
 }
@@ -336,7 +353,7 @@ li:hover::after {
 .services-box p {
   text-transform: capitalize;
   word-spacing: 2px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -355,7 +372,7 @@ li:hover::after {
   left: 0;
   width: 0px;
   height: 0px;
-  transition: 0.3s;
+  transition: .7s;
 }
 
 .services-box:hover::after {
@@ -489,7 +506,7 @@ li:hover::after {
 .icon-parent {
   width: 100%;
   height: 300px;
-  background-image: url(../images/image.png);
+  background-image: url(../images/icons-bk.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin: 60px 0;
@@ -514,6 +531,7 @@ li:hover::after {
   border: 2px solid red;
   border-radius: 50%;
   color: red;
+  cursor: pointer;
 }
 
 .icon-icons i:hover {
@@ -643,47 +661,39 @@ li:hover::after {
   width: 100%;
   background-image: url(../images/image.png);
   background-attachment: fixed;
-  height: 300px;
-  margin: 60px 0;
+  height: 400px;
+  margin: 50px 0;
   background-size: cover;
   position: relative;
-  overflow: auto;
-}
-
-.who .who-container {
-  margin-top: 50px;
-  padding: 100px 0px;
-  /* background-color: red; */
   /* overflow: auto; */
-  position: relative;
 }
 
-.who .who-container .child1 {
+.who .child1 {
   /* float: left; */
-  width: 40%;
-  /* height: 200px; */
+  width: 50%;
+  height: 250px;
   /* position: relative; */
   /* margin-right: 20%; */
   /* background-color: aqua; */
   position: absolute;
   left: 0px;
-  bottom: 20px;
+  bottom: 50px;
 }
 
-.who .who-container .child22 {
+.who .child22 {
   /* float: left; */
-  width: 40%;
-  /* height: 100px; */
-  /* position: relative; */
+  width: 50%;
+  height: 250px;
+  position: relative;
   /* margin-left: 20%;
     margin-top: -5%; */
   /* background-color: blueviolet; */
   position: absolute;
-  right: 30px;
-  bottom: 20px;
+  right: 0px;
+  bottom: 50px;
 }
 
-.who-container .child1 img {
+.who .child1 img {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -692,13 +702,13 @@ li:hover::after {
   left: 20px;
 }
 
-.who-container .child1 h2 {
+.who .child1 h2 {
   color: white;
   margin-left: 100px;
   font-size: 32px;
 }
 
-.who-container .child1 span {
+.who .child1 span {
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -708,13 +718,13 @@ li:hover::after {
   margin-top: 10px;
 }
 
-.who-container .child1 p {
+.who .child1 p {
   color: white;
   margin-top: 20px;
   margin-left: 20px;
 }
 
-.who-container .child22 img {
+.who .child22 img {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -723,13 +733,13 @@ li:hover::after {
   left: 20px;
 }
 
-.who-container .child22 h2 {
+.who .child22 h2 {
   color: white;
   margin-left: 100px;
   font-size: 32px;
 }
 
-.who-container .child22 span {
+.who .child22 span {
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -739,7 +749,7 @@ li:hover::after {
   margin-top: 10px;
 }
 
-.who-container .child22 p {
+.who .child22 p {
   color: white;
   margin-top: 20px;
   margin-left: 20px;
